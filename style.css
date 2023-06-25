@@ -1,24 +1,33 @@
 /* style.css */
 
 body {
-    color: white;
-    background-color: black;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
+  color: white;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 
-h1 {
-    text-align: center;
+h1, h2 {
+text-align: center;
+  margin-bottom: 50px;
 }
 
 section {
   height: 100vh;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.info_sections {
+  margin-bottom: 0px;
+  margin-top: 20vh;
+  height: 100vh;
+  width: 100%;
 }
 
 .navbar-container {
@@ -55,20 +64,16 @@ section {
   transform: translateY(0%);
 }
 
-.home_sections {
-  text-align: center;
-}
-
 .title-text {
   text-align: center;
 }
 
 .logo {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 100px;
-  height: 100px;
+  top: 25px;
+  left: 25px;
+  width: 75px;
+  height: 75px;
 }
 
 .footer {
@@ -93,4 +98,47 @@ section {
 .scroll-down-button img {
   width: 100%;
   height: 100%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-media-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-media-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.social-media-item span {
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contact-content {
+  background-color: aquamarine;
+  margin-left: 15%;
+  margin-right: 15%;
+
+
+}
+
+.contact-details {
+  color: white;
+  text-decoration: none;
+  background-color: brown;
+}
+
+.contact-details a {
+  color: white;
+  text-decoration: none;
 }
