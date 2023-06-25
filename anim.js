@@ -7,6 +7,12 @@ window.addEventListener('scroll', function() {
       navbarContainer.classList.remove('navbar-transition');
       navbarContainer.classList.add('navbar-hidden');
     }
+    var scrollButton = document.querySelector('.scroll-down-button');
+    if (window.scrollY > 0) {
+      scrollButton.style.opacity = 0;
+    } else {
+      scrollButton.style.opacity = 1;
+    }
   });
   
   window.addEventListener('DOMContentLoaded', function() {
@@ -15,5 +21,13 @@ window.addEventListener('scroll', function() {
   
     // Trigger a reflow to apply the initial hidden state
     void navbarContainer.offsetWidth;
+
+    var scrollButton = document.querySelector('.scroll-down-button');
+    scrollButton.addEventListener('click', function() {
+      window.scroll({
+        top: window.innerHeight,
+        behavior: 'smooth'
+      });
+    });
   });
   
